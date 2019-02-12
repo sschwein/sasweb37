@@ -20,3 +20,5 @@ __pycache__/
 docker-compose.yml
 Dockerfile
 README.md
+tests/
+.pytest_cache/

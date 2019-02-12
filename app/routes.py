@@ -1,12 +1,16 @@
-from app import flask_app as app
+# from app import app
+from flask import (
+    Blueprint, flash, g, redirect, render_template, request, url_for
+)
 
+bp = Blueprint('blog', __name__)
 
-@app.route("/")
+@bp.route("/")
 def home():
-    app.logger.info("test log")
-    return "Hello, Wasdforld!"
+    # app.logger.info("test log")
+    return "Hello, World!"
 
-@app.route("/test")
+@bp.route("/test")
 def test():
-    app.logger.info("test root log")
-    return "Hello, World 2!"
+    # app.logger.info("test root log")
+    return "Hello, World test!"

@@ -1,4 +1,6 @@
-from app import flask_app as app
+import app
+
+app = app.create_app()
 
 if __name__ == "__main__":
     # This is used when running locally only. When deploying to Google App
