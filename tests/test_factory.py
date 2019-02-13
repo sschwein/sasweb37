@@ -10,4 +10,4 @@ def test_config():
 def test_hello(client):
     response = client.get('/test')
     assert response.status_code == 200
-    assert 'Hello, World test!' in response.data.decode('utf-8')
+    assert 'Hello, World testasdf!' in response.data.decode('utf-8')
