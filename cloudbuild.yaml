@@ -1,0 +1,15 @@
+steps:
+  - name: 'gcr.io/cloud-builders/git'
+    args: ['clone', 'https://github.com/sschwein/sasweb37']
+  - name: 'gcr.io/cloud-builders/git'
+    args: ['py.test', 'tests/test_factory.py']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/sschwein-website-37/github.com/sschwein/sasweb37', '.']
+    timeout: 500s
+
+  
+  # - name: 'gcr.io/cloud-builders/docker'
+  #   args: ['push', 'gcr.io/sschwein-website-37/github.com/sschwein/sasweb37']
+  # - name: 'gcr.io/cloud-builders/gcloud'
+  #   args: ['app', 'deploy', '-v', 'test-build']
+  #   timeout: 1600s
