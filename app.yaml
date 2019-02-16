@@ -8,5 +8,5 @@ handlers:
 - url: /static/js
   static_dir: app/static/js
 - url: /.*
-  script: main.app
+  script: auto
   secure: always
