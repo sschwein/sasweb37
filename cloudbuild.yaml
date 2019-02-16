@@ -10,15 +10,15 @@ steps:
 
   # Pull app:latest image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['pull', 'eu.gcr.io/$PROJECT_ID/github.com/sschwein/sasweb37:latest']
+    args: ['pull', 'gcr.io/$PROJECT_ID/github.com/sschwein/sasweb37:latest']
 
   # Build main image using :latest as build cache
   - name: 'gcr.io/cloud-builders/docker'
     args: [
           'build',
-          '--cache-from', 'eu.gcr.io/$PROJECT_ID/github.com/sschwein/sasweb37:latest',
+          '--cache-from', 'gcr.io/$PROJECT_ID/github.com/sschwein/sasweb37:latest',
           '-f', 'Dockerfile',
-          '-t', 'eu.gcr.io/$PROJECT_ID/github.com/sschwein/sasweb37:$COMMIT_SHA',
+          '-t', 'gcr.io/$PROJECT_ID/github.com/sschwein/sasweb37:$COMMIT_SHA',
           '.'
         ]
 
@@ -26,9 +26,9 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: [
           'run',
-          'eu.gcr.io/$PROJECT_ID/github.com/sschwein/sasweb37:$COMMIT_SHA'
+          'gcr.io/$PROJECT_ID/github.com/sschwein/sasweb37:$COMMIT_SHA'
         ]
 
   # app image is pushed to Google Container Registry
 images:
-  - 'eu.gcr.io/$PROJECT_ID/github.com/sschwein/sasweb37:$COMMIT_SHA'
+  - 'gcr.io/$PROJECT_ID/github.com/sschwein/sasweb37:$COMMIT_SHA'
