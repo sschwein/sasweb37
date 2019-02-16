@@ -7,7 +7,13 @@ def test_config():
     assert create_app({"TESTING": True}).testing
 
 
+def test_index(client):
+    response = client.get("/")
+    assert response.status_code == 200
+    assert "Hello, World!" in response.data.decode("utf-8")
+
+
 def test_hello(client):
     response = client.get("/test")
     assert response.status_code == 200
-    assert "Hello, World testasdf!" in response.data.decode("utf-8")
+    assert "Hello, World test!" in response.data.decode("utf-8")
