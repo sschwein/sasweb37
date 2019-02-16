@@ -23,3 +23,4 @@ README.md
 tests/
 .pytest_cache/
 .vscode
+.flake8
