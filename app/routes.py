@@ -1,5 +1,5 @@
 # from app import app
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 bp = Blueprint("blog", __name__)
 
@@ -7,7 +7,7 @@ bp = Blueprint("blog", __name__)
 @bp.route("/")
 def home():
     # app.logger.info("test log")
-    return "Hello, World Cloud Builder!"
+    return render_template("home.html")
 
 
 @bp.route("/test")

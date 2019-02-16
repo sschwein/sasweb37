@@ -1,1 +1,12 @@
 runtime: python37
+  
+handlers:
+- url: /static/images
+  static_dir: app/static/images
+- url: /static/css
+  static_dir: app/static/css
+- url: /static/js
+  static_dir: app/static/js
+- url: /.*
+  script: main.app
+  secure: always
