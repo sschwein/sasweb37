@@ -32,8 +32,9 @@ steps:
   # Deploy to Google App Engine
   - name: "gcr.io/cloud-builders/gcloud"
     args: ["app", "deploy"]
-    timeout: 1600s
 
   # app image is pushed to Google Container Registry
 images:
   - 'gcr.io/$PROJECT_ID/github.com/sschwein/sasweb37:$COMMIT_SHA'
+
+timeout: 1600s
