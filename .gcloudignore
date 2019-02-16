@@ -22,3 +22,4 @@ Dockerfile
 README.md
 tests/
 .pytest_cache/
+.vscode
