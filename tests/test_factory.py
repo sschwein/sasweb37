@@ -10,7 +10,7 @@ def test_config():
 def test_index(client):
     response = client.get("/")
     assert response.status_code == 200
-    assert "Hello, World" in response.data.decode("utf-8")
+    assert "Steven Schweinhart" in response.data.decode("utf-8")
 
 
 def test_hello(client):
