@@ -1,12 +1,12 @@
 steps:
   # Set PR status to pending while build is ongoing by calling the SetPending cloud function.
-  - name: 'gcr.io/cloud-builders/gcloud'
-    args: [
-        'beta',
-        'functions',
-        'call','gcp-cicd-set-pending',
-        '--data={"commit_sha":"$COMMIT_SHA", "logUrl":"https://console.cloud.google.com/gcr/builds/$BUILD_ID"}'
-    ]
+  # - name: 'gcr.io/cloud-builders/gcloud'
+  #   args: [
+  #       'beta',
+  #       'functions',
+  #       'call','gcp-cicd-set-pending',
+  #       '--data={"commit_sha":"$COMMIT_SHA", "logUrl":"https://console.cloud.google.com/gcr/builds/$BUILD_ID"}'
+  #   ]
 
   # Pull app:latest image
   - name: 'gcr.io/cloud-builders/docker'
