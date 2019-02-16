@@ -7,4 +7,4 @@ if __name__ == "__main__":
     # Engine, a webserver process such as Gunicorn will serve the app. This
     # can be configured by adding an `entrypoint` to app.yaml.
     app.run(host="0.0.0.0", port=8080, debug=True)
-    app.logger.warning('after run warning')
+    app.logger.warning("after run warning")
