@@ -36,3 +36,5 @@ steps:
   # app image is pushed to Google Container Registry
 images:
   - 'gcr.io/$PROJECT_ID/github.com/sschwein/sasweb37:$COMMIT_SHA'
+
+timeout: 1600s

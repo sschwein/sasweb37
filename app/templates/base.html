@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Steven Schweinhart - Web Developer/Data Engineer</title>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"/>
+
+        <!--CSS-->
+        <link rel="stylesheet" href="static/css/bootstrap.css" {#integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"#}>
+        <link rel="stylesheet" href="static/css/base.css">
+
+        <!--JS-->
+        <script type="text/javascript" src="static/js/master.js"></script>
+        <script>
+            var app = angular.module('app', ['ngMaterial', 'ngMessages', 'ngCookies'], function($interpolateProvider, $locationProvider) {
+                $interpolateProvider.startSymbol('[[');
+                $interpolateProvider.endSymbol(']]');
+                $locationProvider.html5Mode({
+                    enabled: true,
+                    requireBase: false
+                });
+            });
+        </script>
+        <script type="text/javascript" src="static/js/newbase.js"></script>
+        <script type="text/javascript" src="static/js/controllers/app.js"></script>
+    </head>
+    <body ng-app='app' ng-controller='BaseController'>
+        <nav id='header' class="navbar navbar-toggleable-md navbar-light bg-med-grey">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="/" target='_self'>Steven Schweinhart</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/api" target='_self'>API</a>
+                    </li>
+                    <li class="nav-item" ng-show='{{is_logged_in}} == 0' ng-cloak>
+                        <a class="nav-link" href="/login" target='_self'>Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/congress/bill/search" target='_self'>Bill Search</a>
+                    </li>
+                    <li class="nav-item" ng-show='{{is_logged_in}} == 1' ng-cloak>
+                        <a class="nav-link" href="/api/profile" target='_self'>Profile</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <div id='header-back'></div>
+        <div id='content'>
+            {% block content %}
+            {% endblock %}
+        </div>
+
+        <div id='footer'>
+            © 2019 Steven Schweinhart, All Rights Reserved. Icons from: <a href="http://www.onlinewebfonts.com">Online Web Fonts</a>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    </body>
+</html>
