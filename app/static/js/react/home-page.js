@@ -84,12 +84,12 @@ homeSliderElements = {
             React.createElement(
                 "p",
                 { className: "my-5" },
-                "I am a software engineer based in Louisville KY that enjoys building tools to solve problems. This includes building video games for school projects to this website."
+                "I am a software engineer based in Louisville KY that enjoys building tools to solve problems. This includes projects like recreating classic video games, building furniture, and creating websites."
             ),
             React.createElement(
                 "p",
                 { className: "my-5" },
-                "Over the past decade as a programmer, I have built up a collection of projects scattered across my many computers. This has made it difficult to showcase my work at its best. I plan on using this domain to host all of my ideas in one place. "
+                "Over the past decade as a software engineer, I have built up a collection of projects scattered around. This has made it difficult to showcase my work at its best. I plan on using this domain to host all of my ideas in one place. "
             ),
             React.createElement(
                 "p",
@@ -134,7 +134,7 @@ homeSliderElements = {
                 React.createElement(
                     "div",
                     { className: "home-section-p" },
-                    "I worked as a Software Engineer inside the Digital Health & Analytics Organization. My team created a data science platform for our data scientists and managed exiting data analytics solutions. My focus was automating legacy data solutions using Python; engineering new analytics solutions using frameworks like Airflow, Pyspark, and Django; and implementing Python packages to facilitate data science projects."
+                    "Steven works as a Software Engineer inside the Digital Health & Analytics Organization. His primary responsibilities include migrating legacy analytics solutions to Microsoft Azure; productionizing machine learning models using Python, Databricks, and Azure Functions; and implementing libraries to facilitate data science projects. Secondary responsibilities include dev ops engineering, infrastructure automation, linux system administration, and support engineering."
                 )
             )
         ),
@@ -171,7 +171,7 @@ homeSliderElements = {
                 React.createElement(
                     "div",
                     { className: "home-section-p" },
-                    "The Glass Capitol is a digital civic engagement platform dedicated to helping grassroots organizations effectively leverage the voices of their members. As CTO my focus was leading the development of the website's technical framework.  This included designing and building the site back-end using Google App Engine's Python web framework; leading a team of developers with site development; and helping to create the site front-end using HTML5, CSS, and AngularJS. "
+                    "The Glass Capitol is a digital civic engagement platform dedicated to helping grassroots organizations effectively leverage their collective voice. As CTO Steven's focus was leading the development of the website's technical framework.  This included designing and building the site back-end using Google App Engine and Python; leading a team of developers with site development; and creating the site's front-end using HTML5, CSS, and AngularJS. "
                 )
             )
         ),
@@ -208,7 +208,7 @@ homeSliderElements = {
                 React.createElement(
                     "div",
                     { className: "home-section-p" },
-                    "At Humana Military I worked as a member of a BI reporting team. My responsibilities involved creating and maintaining reports for both government and business users. Data movement and ingestion was performed with SSIS, data querying was performed with MS SQL, and the reports were generated using Actuate E.Report software and Microsoft Excel."
+                    "At Humana Military Steven worked as a member of a BI reporting team. His responsibilities involved creating and maintaining reports for both government and business users. Data movement and ingestion was performed with SSIS, data querying was performed with MS SQL, and the reports were generated using Actuate E.Report software and Microsoft Excel."
                 )
             )
         ),
@@ -245,7 +245,7 @@ homeSliderElements = {
                 React.createElement(
                     "div",
                     { className: "home-section-p" },
-                    "My graduate year at U of L challenged me, expanding my knowledge of computer engineering topics like machine learning, parallel programming, and network security. For my master's project I applied a genetic learning algorithm to create a lossy compression algorithm. While the resulting algorithm was ineffective as a form of compression, it could be improved with more iterations."
+                    "Steven's graduate year at U of L was challenging, expanding his knowledge of computer engineering topics like machine learning, parallel programming, and network security. For his master's project he applied a genetic learning algorithm to create a lossy compression algorithm. While the resulting algorithm was ineffective as a form of compression, there are several pathways for improvement."
                 )
             )
         ),
@@ -282,7 +282,7 @@ homeSliderElements = {
                 React.createElement(
                     "div",
                     { className: "home-section-p" },
-                    "University of Louisville is where I fostered my love for engineering. My course work taught me the foundations of computer science that I needed in my day to day work as a computer engineer. I was able to grow my skills through projects such as creating a doodlebot, building an AI to play Tetris, and creating VR video games."
+                    "University of Louisville is where Steven fostered his love for engineering. His course work taught the foundations of computer science that Steven needed in his day to day work as a computer engineer. He was able to grow my skills through projects such as creating a doodlebot, training an AI to play Tetris, and creating VR video games."
                 )
             )
         ),
@@ -319,7 +319,7 @@ homeSliderElements = {
                 React.createElement(
                     "div",
                     { className: "home-section-p" },
-                    "During my undergraduate years at UofL, I participated in their co-operative education program as an intern at Siemens Rail Automation. Over three semesters, I designed and constructed a Factory Testing Simulator for a subway interlocking control project. I also redesigned the testing simulator for training subway operators upon installation of the final interlocking project."
+                    "During his undergraduate years at UofL, Steven participated in their co-operative education program as an intern at Siemens Rail Automation. Over three semesters, he designed and constructed a Factory Testing Simulator for a subway interlocking control project. Steven also redesigned the testing simulator for training subway operators upon installation of the final interlocking project."
                 )
             )
         ),
@@ -356,7 +356,7 @@ homeSliderElements = {
                 React.createElement(
                     "div",
                     { className: "home-section-p" },
-                    "Participating in the Math, Science, and Technology (MST) magnet at Manual was a strenuous 4 years that pushed me to adapt and grow into an adult. I enjoyed and learned a lot from extracurricular activities like Science Fair, Science Olympiad, and Key Club. I also discovered my love for computer programming at Manual, leading me to pursue it in college and later in my career."
+                    "Participating in the Math, Science, and Technology (MST) magnet at Manual was a strenuous 4 years that pushed Steven to adapt and grow into an adult. He enjoyed and learned a lot from extracurricular activities like Science Fair, Science Olympiad, and Key Club. He also discovered my love for computer programming at Manual, leading him to pursue it in college and later in his career."
                 )
             )
         )
@@ -443,12 +443,7 @@ homeSliderElements = {
                     React.createElement(
                         "li",
                         null,
-                        "Serverless Computing"
-                    ),
-                    React.createElement(
-                        "li",
-                        null,
-                        "NoSQL Databases"
+                        "Microsoft Azure"
                     ),
                     React.createElement(
                         "li",
@@ -458,7 +453,12 @@ homeSliderElements = {
                     React.createElement(
                         "li",
                         null,
-                        "Microsoft Azure"
+                        "Serverless Computing"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "NoSQL Databases"
                     ),
                     React.createElement(
                         "li",
@@ -504,6 +504,11 @@ homeSliderElements = {
                         "li",
                         null,
                         "Docker"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "React"
                     )
                 )
             ),
@@ -552,6 +557,11 @@ homeSliderElements = {
                         "li",
                         null,
                         "Cyber Security"
+                    ),
+                    React.createElement(
+                        "li",
+                        null,
+                        "Terraform"
                     )
                 )
             )
